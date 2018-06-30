@@ -1,39 +1,157 @@
 <!--index.wxml-->
+
 <view class="container">
-    <!-- 用户登录测试 -->
-    <view class="userinfo">
-        <image
-            class="userinfo-avatar"
-            src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}"
-            background-size="cover"
-        ></image>
-        <view>
-            <button class="userinfo-nickname" wx:if="{{!logged}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">点击测试登录接口</button>
-            <text class="userinfo-nickname" wx:else>{{userInfo.nickName}}</text>
+
+<view>
+  <text class="beizhu">Welcome to tracy闲置!</text>
+</view>
+
+  <!--添加自定义图片_正式区域-->
+  <view calss="xianzhi_0">
+
+    <view class="xianzhi_bd">
+      <view class="section section_gap">
+        <view class="section_ctn">
+          <image style="width: 200px; height: 200px; backgrounp-color: #eeeeee;"mode="aspectFill" src="../../PrimaryDraft/20180530_01_clothes_shirt_white_ball_LongSleeve_front.jpg"></image>
+          <text>\n</text>
+          <text class="xianzhi_sm">白色民族风衬衫front2018053001</text>
+          <button class='btn' bindtap='settemp1'> 购买 </button>
         </view>
+      </view>
+    </view>
+    
+    <view class="xianzhi_sm">
+      <text>\n</text>
+    </view>
+    
+  </view>
+
+    <view calss="xianzhi_1">
+    <view class="xianzhi_bd">
+      <view class="section section_gap">
+        <view class="section_ctn">
+          <image style="width: 200px; height: 200px; backgrounp-color: #eeeeee;" mode="aspectFill" src="../../PrimaryDraft/20180530_01_clothes_shirt_white_ball_LongSleeve_back.jpg"></image>
+        <text>\n</text>
+        <text class="xianzhi_sm">白色民族风衬衫back2018053001</text>
+        <button class='btn' bindtap='settemp1'> 购买 </button>
+        </view>
+      </view>
     </view>
 
+     <view class="xianzhi_sm">
+      <text>\n</text>
+    </view>
+  </view>
 
-    <!-- 上传图片测试 -->
-    <view class="uploader">
-        <view class="uploader-text" bindtap="doUpload">
-            <text>上传图片</text>
+
+  <view calss="xianzhi_2">
+    
+    <view class="xianzhi_bd">
+      <view class="section section_gap">
+        <view class="section_ctn">
+          <image style="width: 200px; height: 200px; backgrounp-color: #eeeeee;" mode="aspectFill" src="../../PrimaryDraft/20180530_01_clothes_shirt_blue_HollowOut_LongSleeve_front.jpg"></image>
+        <text>\n</text>
+        <text class="xianzhi_sm">蓝色镂空袖衬衫front2018053001</text>
+        <button class='btn' bindtap='settemp1'> 购买 </button>
         </view>
-        <view class="uploader-container" wx:if="{{imgUrl}}">
-            <image
-                class="uploader-image"
-                src="{{imgUrl}}"
-                mode="aspectFit"
-                bindtap="previewImg"
-            ></image>
-        </view>
+      </view>
     </view>
 
-
-    <!-- 上传图片测试 -->
-    <view class="uploader">
-        <navigator url="../addCgi/addCgi" open-type="navigate" class="uploader-text">
-            <text>快速增加 CGI</text>
-        </navigator>
+    <view class="xianzhi_sm">
+      <text>\n</text>
     </view>
+  </view>
+
+    <view calss="xianzhi_3">
+    <view class="xianzhi_bd">
+      <view class="section section_gap">
+        <view class="section_ctn">
+          <image style="width: 200px; height: 200px; backgrounp-color: #eeeeee;" mode="aspectFill" src="../../PrimaryDraft/20180530_01_clothes_shirt_blue_HollowOut_LongSleeve_back.jpg"></image>
+          <text>\n</text>
+          <text class="xianzhi_sm">蓝色镂空袖衬衫back2018053001</text>
+          <button class='btn' bindtap='settemp1'> 购买 </button>
+        </view>
+      </view>
+    </view>
+    
+    <view class="xianzhi_sm">
+      <text>\n</text>
+    </view>
+  </view>
+
+
+   <view calss="xianzhi_4">
+   
+    <view class="xianzhi_bd">
+      <view class="section section_gap">
+        <view class="section_ctn">
+          <image style="width: 200px; height: 200px; backgrounp-color: #eeeeee;" mode="aspectFill" src="../../PrimaryDraft/20180530_01_clothes_shirt_gray_hat_LongSleeve_front.jpg"></image>
+          <text>\n</text>
+          <text class="xianzhi_sm">灰色卫衣front2018053001</text>
+          <button class='btn' bindtap='settemp1'> 购买 </button>
+        </view>
+      </view>
+    </view>
+
+    <view class="xianzhi_sm">
+      <text>\n</text>
+    </view>
+  </view>
+
+    <view calss="xianzhi_5">
+    <view class="xianzhi_bd">
+      <view class="section section_gap">
+        <view class="section_ctn">
+          <image style="width: 200px; height: 200px; backgrounp-color: #eeeeee;" mode="aspectFill" src="../../PrimaryDraft/20180530_01_clothes_shirt_gray_hat_LongSleeve_back.jpg"></image>
+          <text>\n</text>
+          <text class="xianzhi_sm">灰色卫衣back2018053001</text>
+          <button class='btn' bindtap='settemp1'> 购买 </button>
+        </view>
+      </view>
+    </view>
+
+    <view class="xianzhi_sm">
+      <text>\n</text>
+    </view>
+  </view>
+
+
+   <view calss="xianzhi_6">
+    <view class="xianzhi_bd">
+      <view class="section section_gap">
+        <view class="section_ctn">
+          <image style="width: 200px; height: 200px; backgrounp-color: #eeeeee;" mode="aspectFill" src="../../PrimaryDraft/20180530_01_clothes_shirt_blue_hole_Trousers_front.jpg"></image>
+          <text>\n</text>
+          <text class="xianzhi_sm">蓝色牛仔裤front2018053001</text>
+          <button class='btn' bindtap='settemp1'> 购买 </button>
+        </view>
+      </view>
+    </view>
+
+    <view class="xianzhi_sm">
+      <text>\n</text>
+    </view>
+  </view>
+
+    <view calss="xianzhi_7">
+    <view class="xianzhi_bd">
+      <view class="section section_gap">
+        <view class="section_ctn">
+          <image style="width: 200px; height: 200px; backgrounp-color: #eeeeee;" mode="aspectFills" src="../../PrimaryDraft/20180530_01_clothes_shirt_blue_hole_Trousers_back.jpg"></image>
+          <text>\n</text>
+          <text class="xianzhi_sm">蓝色牛仔裤back2018053001</text>
+          <button class='btn' bindtap='settemp1'> 购买 </button>       
+        </view>
+      </view>
+    </view>
+
+    <view class="xianzhi_sm">
+      <text>\n</text>
+    </view>
+  </view>
+<!--底部文字-->
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
 </view>

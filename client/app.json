@@ -1,13 +1,45 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/addCgi/addCgi"
+    "pages/addCgi/addCgi",
+    "pages/mine/index",
+    "pages/logs/logs",
+    "pages/shoppinglist/index",
+    "pages/xianzhixuzhi/index"
   ],
-  "window":{
-    "backgroundColor":"#F6F6F6",
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "Wafer Quick Start",
-    "navigationBarTextStyle":"black"
+ 
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fb7000",
+    "navigationBarTitleText": "Tracy闲置",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": false,
+    "navigationStyle": "default",
+    "backgroundColorTop": "#ffffff",
+    "backgroundColorBottom": "#ffffff",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedlconPath": ""
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "selectedlconPath": ""
+      }
+    ],
+    "color": "#cccccc",
+    "selectedColor": "#fb7000",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "",
+    "position": ""
   }
+  
 }
+
+
